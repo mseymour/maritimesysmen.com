@@ -1,0 +1,13 @@
+id,name,chartered,website,district_id,meeting_date,meeting_time,meeting_place_name,meeting_place_address,meeting_place_city,meeting_place_province_id,meeting_place_postal_code
+1,Fredericton Captials,"March 25, 1937",,3,Every Wednesday,6:00 PM,Fredericton YMCA,570 York Street,Fredericton,1,E3B 3R3
+2,Fredericton Epsilon,"May 2, 1957",http://www.ymcafredericton.nb.ca/history.htm,3,Every Tuesday,6:30 PM,Fredericton YMCA,570 York Street,Fredericton,1,E3B 3R3
+3,Marysville,"March 30, 1985",http://marysvilleysmen.ca/,3,Every 2nd Monday,7:00 PM,Marysville Y's Men-Women's RegionalClub,11 McGloin Street,Fredericton,1,E3A 4J9
+4,Nashwaaksis,"March 5, 1960",,3,2nd Monday and 4th Saturday,5:45 PM,Willie O’Ree Place,605 Cliffe Street,Fredericton,1,E3A 0S1
+5,Saint John,"January 28, 1925",http://www.saintjohnysmen.ca/,3,Every Monday,6:00 PM,Glenn Carpenter Centre,730 Foster Thurston Dr,St John,1,E2K 5J4
+6,Woodstock,"April 2, 1945",,3,Every Monday,7:00 PM,Woodstock Community Y,145 Connell Park Road,Woodstock,1,E7M 1M5
+7,Cumberland Y Service,"April 25, 1962",http://cumberlandyserviceclub.com/,2,1st and 3rd Wednesday of each month,6:30 PM,Cumberland YMCA,92 Church Street,Amherst,2,B4H 3B2
+9,Pictou County,"March 29, 1972",,2,3rd Tuesday,7:00 PM,YMCA of Pictou County,2756 Westville Road,New Glasgow,2,B2H 5C6
+11,Glace Bay & Area,"May 19, 2007",,1,Every Saturday,9:15 PM,Riverview Y's Men Youth Centre,54 Riverdale Drive,Sydney,2,B1R 1P4
+12,Sydney-Riverview,2015,,1,???,???,Riverview Y's Men Youth Centre,54 Riverdale Drive,Sydney,2,B1R 1P4
+8,Charlottetown,"November 24, 1925",,2,1st and 3rd Thursday of each month,6:15 PM,Razzy's Roadhouse,161 Saint Peters Road,Charlottetown,3,C1A 5P7
+10,Summerside,"April 10, 1937",,2,Every 2nd Thursday,6:30 PM,The YMCA of Prince Edward Island,212 Green Street,Summerside,3,C1N 1Y4
