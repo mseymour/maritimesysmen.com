@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class EventLink extends Model
 {
-
   /**
    * Get the link's associated event
    */
