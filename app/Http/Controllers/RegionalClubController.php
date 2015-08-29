@@ -17,9 +17,9 @@ class RegionalClubController extends Controller
   public function showIndex($id = null)
   {
     if (!$id) {
-      return view('regional.clubs', ['districts' => RegionalDistrict::all()]);
+      return view('clubs.clubs', ['districts' => RegionalDistrict::all()]);
     } else {
-      return view('regional.club', ['club' => RegionalClub::findBySlugOrIdOrFail($id)]);
+      return view('clubs.club', ['club' => RegionalClub::findBySlugOrIdOrFail($id)]);
     }
   }
 }

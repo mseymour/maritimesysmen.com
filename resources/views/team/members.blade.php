@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
-@section('title', 'Events')
+@section('title', 'Regional Team')
 
 @section('content')
 <ul>
-@foreach ($events as $event)
+@foreach ($team as $member)
   <li>
-    @include('events._event')
+    @include('team._member')
   </li>
 @endforeach
 </ul>

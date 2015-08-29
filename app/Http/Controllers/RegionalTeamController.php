@@ -14,6 +14,6 @@ class RegionalTeamController extends Controller
    */
   public function showIndex()
   {
-      return view('regional.team', ['team' => RegionalTeamMember::all()]);
+      return view('team.members', ['team' => RegionalTeamMember::all()]);
   }
 }
