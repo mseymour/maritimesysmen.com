@@ -1,0 +1,9 @@
+.masthead {
+  $bg-color: palette(red);
+  background-color: $bg-color;
+  color: contrasting-color($bg-color, #FFF, #000);
+  a { color: inherit; }
+  .wrap { @include container; }
+  .logo { @include span(1); height: 66px; img { height: 66px; } }
+  .site-nav { @include span(11 nest last); }
+}

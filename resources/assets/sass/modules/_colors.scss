@@ -1,0 +1,23 @@
+// http://www.ppgvoiceofcolor.com/collections/regional-collections/nova-scotia
+
+$palettes: (
+  red: (
+    base:  #777,
+    light: #CCC,
+    dark: #444
+  ),
+  blue: (
+    base:  #777,
+    light: #CCC,
+    dark: #444
+  ),
+  gray: (
+    base:  #777,
+    light: #CCC,
+    dark: #444
+  )
+);
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
