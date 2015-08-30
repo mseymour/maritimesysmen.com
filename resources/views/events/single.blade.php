@@ -3,5 +3,5 @@
 @section('title', $event->title.' - Events')
 
 @section('content')
-@include('events._event')
+@include('events._event', ['event' => $event])
 @endsection

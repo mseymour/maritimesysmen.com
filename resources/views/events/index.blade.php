@@ -6,7 +6,7 @@
 <ul>
 @foreach ($events as $event)
   <li>
-    @include('events._event')
+    @include('events._event', ['event' => $event])
   </li>
 @endforeach
 </ul>

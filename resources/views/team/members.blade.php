@@ -6,7 +6,7 @@
 <ul>
 @foreach ($team as $member)
   <li>
-    @include('team._member')
+    @include('team._member', ['member' => $member])
   </li>
 @endforeach
 </ul>
