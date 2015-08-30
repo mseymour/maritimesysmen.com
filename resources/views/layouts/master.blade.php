@@ -46,8 +46,8 @@
             </ul>
           </li><!--
           --><li><a href="/clubs"><span>Our Clubs <small>From Woodstock to Glace Bay</small></span></a></li><!--
-          --><li><a href="#"><span>Regional Team <small>2014&mdash;2015</small></span></a></li><!--
-          --><li><a href="#"><span>Regional Convention <small>Woodstock 2015</small></span></a></li><!--
+          --><li><a href="/team"><span>Regional Team <small>2014&mdash;2015</small></span></a></li><!--
+          --><li><a href="/events/xyz-convention-2016"><span>Regional Convention <small>Woodstock 2015</small></span></a></li><!--
           --><!-- <li><a href="#"><span>Submit a report</span></a>
               <ul>
                 <li><a href="#">Regional Presidents</a></li>
