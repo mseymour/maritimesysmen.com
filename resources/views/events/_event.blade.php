@@ -14,8 +14,8 @@
     </div>
   </div>
   <ul>
-  @foreach ($event->links->sortByDesc('is_main_link') as $link)
-    <li @if ($link->is_main_link) style="font-size:125%" @endif>{!! link_to($link->link, $link->link_title) !!}</li>
+  @foreach ($event->links->sortByDesc('major') as $link)
+    <li @if ($link->major) style="font-size:125%" @endif>{!! link_to($link->url, $link->title) !!}</li>
   @endforeach
   </ul>
 </div>

@@ -1,4 +1,4 @@
-id,name,chartered,website,district_id,meeting_date,meeting_time,meeting_place_name,meeting_place_address,meeting_place_city,meeting_place_province_id,meeting_place_postal_code
+id,name,chartered,url,district_id,meeting_date,meeting_time,meeting_place_name,meeting_place_address,meeting_place_city,meeting_place_province_id,meeting_place_postal_code
 1,Fredericton Captials,"March 25, 1937",,3,Every Wednesday,6:00 PM,Fredericton YMCA,570 York Street,Fredericton,1,E3B 3R3
 2,Fredericton Epsilon,"May 2, 1957",http://www.ymcafredericton.nb.ca/history.htm,3,Every Tuesday,6:30 PM,Fredericton YMCA,570 York Street,Fredericton,1,E3B 3R3
 3,Marysville,"March 30, 1985",http://marysvilleysmen.ca/,3,Every 2nd Monday,7:00 PM,Marysville Y's Men-Women's RegionalClub,11 McGloin Street,Fredericton,1,E3A 4J9

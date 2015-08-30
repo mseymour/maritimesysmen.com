@@ -1,5 +1,5 @@
 <div itemscope itemtype="http://schema.org/Organization">
-  <h2><a itemprop="url" href="{{ $club->website }}"><span itemprop="name">{{ $club->name }}</span></a></h2>
+  <h2><a itemprop="url" href="{{ $club->url }}"><span itemprop="name">{{ $club->name }}</span></a></h2>
   <p>{{ $club->chartered }}</p>
   <p>{{ $club->meeting_date }} @ {{ $club->meeting_time }}</p>
   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">

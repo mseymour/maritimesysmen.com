@@ -15,9 +15,9 @@ class CreateEventLinksTable extends Migration
         Schema::create('event_links', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('link');
-            $table->string('link_title');
-            $table->boolean('is_main_link')->default(false);
+            $table->string('url');
+            $table->string('title');
+            $table->boolean('major')->default(false);
 
             $table->integer('event_id')->unsigned();
 

@@ -17,7 +17,7 @@ class CreateRegionalClubsTable extends Migration
 
             $table->string('name');
             $table->string('chartered');
-            $table->string('website');
+            $table->string('url');
             $table->string('meeting_date');
             $table->string('meeting_time');
             $table->string('meeting_place_name');
