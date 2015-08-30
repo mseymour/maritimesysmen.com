@@ -147,7 +147,6 @@ return [
         // Additional providers
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
-        //Serverfireteam\Panel\PanelServiceProvider::class,
 
     ],
 
