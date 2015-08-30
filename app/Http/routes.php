@@ -20,3 +20,6 @@ Route::get('clubs/{id?}', ['as' => 'clubs', 'uses' => 'RegionalClubController@sh
 Route::get('team', 'RegionalTeamController@showIndex');
 
 Route::get('events/{id?}', ['as' => 'events', 'uses' => 'EventController@showIndex']);
+Route::get('convention', function () {
+  return Redirect::to('events/2016-maritime-regional-convention', 303);
+});

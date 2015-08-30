@@ -31,5 +31,19 @@ class DatabaseSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         Model::reguard();
+
+        $sluggableModels = [
+            \App\Event::all(),
+            \App\RegionalClub::all(),
+            \App\RegionalDistrict::all(),
+            \App\RegionalPresident::all(),
+            \App\RegionalTeamMember::all()
+        ];
+
+        foreach ($sluggableModels as $sluggableModel) {
+            foreach ($sluggableModel as $post) {
+                $post->resluggify()->save();
+            }
+        }
     }
 }

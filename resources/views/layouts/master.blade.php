@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@if (content_for('title')) @yield('title') - Y&rsquo;s Men Maritimes Region @else Y&rsquo;s Men Maritimes Region, Canada and Caribbean Area @endif</title>
   <link href="/css/style.css" rel="stylesheet">
-  <script src="/http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
   <header id="top" class="masthead" role="banner">
@@ -47,7 +47,7 @@
           </li><!--
           --><li><a href="/clubs"><span>Our Clubs <small>From Woodstock to Glace Bay</small></span></a></li><!--
           --><li><a href="/team"><span>Regional Team <small>2014&mdash;2015</small></span></a></li><!--
-          --><li><a href="/events/xyz-convention-2016"><span>Regional Convention <small>Woodstock 2015</small></span></a></li><!--
+          --><li><a href="/convention"><span>Regional Convention <small>Pictou County 2016</small></span></a></li><!--
           --><!-- <li><a href="#"><span>Submit a report</span></a>
               <ul>
                 <li><a href="#">Regional Presidents</a></li>
