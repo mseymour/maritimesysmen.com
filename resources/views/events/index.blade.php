@@ -3,9 +3,9 @@
 @section('title', 'Events')
 
 @section('content')
-<ul>
+<ul class="cards">
 @foreach ($events as $event)
-  <li>
+  <li class="card">
     @include('events._event', ['event' => $event])
   </li>
 @endforeach

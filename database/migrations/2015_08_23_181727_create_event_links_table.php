@@ -17,7 +17,6 @@ class CreateEventLinksTable extends Migration
 
             $table->string('url');
             $table->string('title');
-            $table->boolean('major')->default(false);
 
             $table->integer('event_id')->unsigned();
 

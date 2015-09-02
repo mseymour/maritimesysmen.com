@@ -13,9 +13,7 @@
   @include('layouts.master._header')
   @yield('hero')
   <main id="content" class="maincontent">
-    <section class="wrap">
-      @yield('content')
-    </section>
+    @yield('content')
   </main>
   @include('layouts.master._footer')
   @yield('bottom')

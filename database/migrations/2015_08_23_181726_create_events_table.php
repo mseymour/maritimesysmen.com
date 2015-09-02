@@ -22,7 +22,8 @@ class CreateEventsTable extends Migration
             $table->string('location_address');
             $table->string('location_city');
             $table->string('description');
-            $table->boolean('is_main_event')->default(false);
+            $table->string('registration_url');
+            $table->boolean('major')->default(false);
 
             $table->integer('location_province_id')->unsigned();
 

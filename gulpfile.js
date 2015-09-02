@@ -12,15 +12,15 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.copy('resources/assets/css/normalize.css', 'public/css/normalize.css');
-    mix.copy('resources/assets/css/webfonts', 'public/css/webfonts');
-    mix.copy('resources/assets/images', 'public/img');
+    mix.copy('resources/assets/img', 'public/img');
+    mix.copy('resources/assets/css', 'public/css');
+    mix.scripts(['jquery.matchHeight-min.js', 'app.js'], 'public/js/app.js');
 
     mix.sass('style.scss', null, {
       includePaths: [
-        './node_modules/susy/sass',
-        './node_modules/breakpoint-sass/stylesheets',
-        './node_modules/mathsass/dist'
+        'node_modules/susy/sass',
+        'node_modules/breakpoint-sass/stylesheets',
+        'node_modules/mathsass/dist'
       ]
     });
 });
