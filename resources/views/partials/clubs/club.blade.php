@@ -14,6 +14,6 @@
         <span itemprop="postalCode">{{ $club->meeting_place_postal_code }}</span>
         <span itemprop="addressLocality">{{ $club->meeting_place_city }} {{ $club->meeting_place_province->code }}</span>
     </div>
-    @include('clubs._president', ['president' => $club->president])
+    @include('partials.clubs.president', ['president' => $club->president])
   </div>
 </div>

@@ -147,6 +147,8 @@ return [
         // Additional providers
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
+        Caffeinated\Menus\MenusServiceProvider::class,
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
 
     ],
 
@@ -199,6 +201,8 @@ return [
         // Additional aliases
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Menu' => Caffeinated\Menus\Facades\Menu::class,
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
 
     ],
 

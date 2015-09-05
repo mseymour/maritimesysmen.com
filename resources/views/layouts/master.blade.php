@@ -10,14 +10,14 @@
   @yield('head')
 </head>
 <body>
-  @include('layouts.master._header')
+  @include('partials.layouts.header')
   @yield('hero')
   <main id="content" class="maincontent">
     <section class="wrap">
       @yield('content')
     </section>
   </main>
-  @include('layouts.master._footer')
+  @include('partials.layouts.footer')
   @yield('bottom')
 </body>
 </html>

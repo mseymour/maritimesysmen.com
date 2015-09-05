@@ -4,8 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c060e962de4f34519230bfcd11ca1858",
+    "hash": "bfecc260d718de873823ad3ea3d21ad9",
     "packages": [
+        {
+            "name": "caffeinated/menus",
+            "version": "v2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/menus.git",
+                "reference": "c740b4d9b8d2c5a649dad2ffca28036cad33693b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/menus/zipball/c740b4d9b8d2c5a649dad2ffca28036cad33693b",
+                "reference": "c740b4d9b8d2c5a649dad2ffca28036cad33693b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "illuminate/view": "5.1.*",
+                "laravelcollective/html": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Menus\\": "src/Caffeinated/Menus/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Menus",
+            "keywords": [
+                "caffeinated",
+                "laravel",
+                "menu",
+                "navigation"
+            ],
+            "time": "2015-07-24 05:22:43"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "2.0.0",
@@ -128,12 +175,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "a83919243c99ec101c43c58b0b72cc5f868d8cd4"
+                "reference": "39108118f0a53f2869cd98d9b3e1cafa50bc32a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/a83919243c99ec101c43c58b0b72cc5f868d8cd4",
-                "reference": "a83919243c99ec101c43c58b0b72cc5f868d8cd4",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/39108118f0a53f2869cd98d9b3e1cafa50bc32a2",
+                "reference": "39108118f0a53f2869cd98d9b3e1cafa50bc32a2",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +217,7 @@
                 "laravel",
                 "slug"
             ],
-            "time": "2015-08-21 16:40:44"
+            "time": "2015-09-02 03:16:59"
         },
         {
             "name": "danielstjules/stringy",
@@ -330,16 +377,16 @@
         },
         {
             "name": "flynsarmy/csv-seeder",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Flynsarmy/laravel-csv-seeder.git",
-                "reference": "6ee1358058de44fbadea04566eb6793046c4e421"
+                "reference": "9b6b261082bf7ff245eeb355261e1038cbd89262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Flynsarmy/laravel-csv-seeder/zipball/6ee1358058de44fbadea04566eb6793046c4e421",
-                "reference": "6ee1358058de44fbadea04566eb6793046c4e421",
+                "url": "https://api.github.com/repos/Flynsarmy/laravel-csv-seeder/zipball/9b6b261082bf7ff245eeb355261e1038cbd89262",
+                "reference": "9b6b261082bf7ff245eeb355261e1038cbd89262",
                 "shasum": ""
             },
             "require": {
@@ -370,7 +417,7 @@
                 "seeding",
                 "seeds"
             ],
-            "time": "2015-06-20 14:10:43"
+            "time": "2015-09-04 04:13:30"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -518,17 +565,72 @@
             "time": "2015-03-11 20:06:43"
         },
         {
-            "name": "laravel/framework",
-            "version": "v5.1.10",
+            "name": "kris/laravel-form-builder",
+            "version": "1.6.20",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "d47ccc8de10ccb6f328cc90f901ca5e47e077c93"
+                "url": "https://github.com/kristijanhusak/laravel-form-builder.git",
+                "reference": "89a764c7c7b42d4876d86cfb59391384e60a54ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d47ccc8de10ccb6f328cc90f901ca5e47e077c93",
-                "reference": "d47ccc8de10ccb6f328cc90f901ca5e47e077c93",
+                "url": "https://api.github.com/repos/kristijanhusak/laravel-form-builder/zipball/89a764c7c7b42d4876d86cfb59391384e60a54ca",
+                "reference": "89a764c7c7b42d4876d86cfb59391384e60a54ca",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.*@dev",
+                "illuminate/validation": "5.*@dev",
+                "laravelcollective/html": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Kris\\LaravelFormBuilder": "src/"
+                },
+                "classmap": [
+                    "tests/FormBuilderTestCase.php"
+                ],
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kristijan Husak",
+                    "email": "husakkristijan@gmail.com"
+                }
+            ],
+            "description": "Laravel form builder - symfony like",
+            "time": "2015-08-06 09:19:59"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v5.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "e34dcc0c57e0f560248aec5128161256ff8bf4e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e34dcc0c57e0f560248aec5128161256ff8bf4e1",
+                "reference": "e34dcc0c57e0f560248aec5128161256ff8bf4e1",
                 "shasum": ""
             },
             "require": {
@@ -643,20 +745,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-08-12 18:16:08"
+            "time": "2015-09-04 12:46:14"
         },
         {
             "name": "laravelcollective/html",
-            "version": "v5.1.4",
+            "version": "v5.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "59f124084c9135a6a8d87323e5c5562ab823deb4"
+                "reference": "8b7c357e78b8fb6a2e48377cf2441441aac6dd1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/59f124084c9135a6a8d87323e5c5562ab823deb4",
-                "reference": "59f124084c9135a6a8d87323e5c5562ab823deb4",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/8b7c357e78b8fb6a2e48377cf2441441aac6dd1e",
+                "reference": "8b7c357e78b8fb6a2e48377cf2441441aac6dd1e",
                 "shasum": ""
             },
             "require": {
@@ -693,20 +795,20 @@
                     "email": "adam@laravelcollective.com"
                 }
             ],
-            "time": "2015-07-28 03:18:41"
+            "time": "2015-09-03 17:16:48"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.11",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "c16222fdc02467eaa12cb6d6d0e65527741f6040"
+                "reference": "7323424a9d39c24e597ed3f2144419dfbb52e086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c16222fdc02467eaa12cb6d6d0e65527741f6040",
-                "reference": "c16222fdc02467eaa12cb6d6d0e65527741f6040",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7323424a9d39c24e597ed3f2144419dfbb52e086",
+                "reference": "7323424a9d39c24e597ed3f2144419dfbb52e086",
                 "shasum": ""
             },
             "require": {
@@ -774,20 +876,20 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-07-28 20:41:58"
+            "time": "2015-09-05 12:06:41"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.17.0",
+            "version": "1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "877ae631713cc961952df713ae785735b90df682"
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/877ae631713cc961952df713ae785735b90df682",
-                "reference": "877ae631713cc961952df713ae785735b90df682",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
                 "shasum": ""
             },
             "require": {
@@ -850,7 +952,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-08-30 11:40:25"
+            "time": "2015-08-31 09:17:37"
         },
         {
             "name": "mtdowling/cron-expression",

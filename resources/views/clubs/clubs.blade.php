@@ -8,7 +8,7 @@
 <ul class="cards">
   @foreach ($district->clubs as $club)
   <li class="card">
-    @include('clubs._club', ['club' => $club])
+    @include('partials.clubs.club', ['club' => $club])
   </li>
   @endforeach
 </ul>

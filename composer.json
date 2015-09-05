@@ -9,7 +9,9 @@
         "laravel/framework": "5.1.*",
         "flynsarmy/csv-seeder": "1.*",
         "cviebrock/eloquent-sluggable": "dev-master",
-        "laravelcollective/html": "^5.1"
+        "laravelcollective/html": "^5.1",
+        "caffeinated/menus": "^2.1",
+        "kris/laravel-form-builder": "^1.6"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

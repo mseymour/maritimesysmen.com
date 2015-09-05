@@ -1,4 +1,7 @@
 <footer class="mainfooter" role="contentinfo">
+  <nav class="wrap">
+    {!! $menu_main->asUl(['class' => 'site-nav-list']) !!}
+  </nav>
   <div class="wrap">
     <div class="logo">
       <img src="/img/logo-white-512.png" alt="[logo] Logo of Y's Men and Y Service Clubs International">

@@ -3,5 +3,5 @@
 @section('title', $club->title.' - Clubs')
 
 @section('content')
-  @include('clubs._club', ['club' => $club])
+  @include('partials.clubs.club', ['club' => $club])
 @endsection

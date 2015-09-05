@@ -6,7 +6,7 @@
 <ul class="cards">
 @foreach ($events as $event)
   <li class="card">
-    @include('events._event', ['event' => $event])
+    @include('partials.events.event', ['event' => $event])
   </li>
 @endforeach
 </ul>

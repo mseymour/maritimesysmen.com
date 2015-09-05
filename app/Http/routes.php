@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', ['as' => 'home', 'uses' => 'HomeController@showIndex']);
+Route::get('/', ['as' => 'home.page', 'uses' => 'HomeController@showIndex']);
 
-Route::get('clubs/{id?}', ['as' => 'clubs', 'uses' => 'RegionalClubController@showIndex']);
+Route::get('clubs/{id?}', ['as' => 'page.clubs', 'uses' => 'RegionalClubController@showIndex']);
 
-Route::get('team', 'RegionalTeamController@showIndex');
+Route::get('team', ['as' => 'page.team', 'uses' => 'RegionalTeamController@showIndex']);
 
-Route::get('events/{id?}', ['as' => 'events', 'uses' => 'EventController@showIndex']);
-Route::get('convention', function () {
+Route::get('events/{id?}', ['as' => 'page.events', 'uses' => 'EventController@showIndex']);
+Route::get('convention', ['as' => 'page.events.convention', function () {
   return Redirect::to('events/2016-maritime-regional-convention', 303);
-});
+}]);
