@@ -13,12 +13,18 @@ class EventController extends Controller
    * @param  int  $id
    * @return Response
    */
-  public function showIndex($id = null)
+  public function showIndex()
   {
-    if (!$id) {
-      return view('events.index', ['events' => Event::all()]);
-    } else {
-      return view('events.single', ['event' => Event::findBySlugOrIdOrFail($id)]);
-    }
+    return view('events.index', ['events' => Event::all()]);
+  }
+  /**
+   * Show the club for the given ID.
+   *
+   * @param  int  $id
+   * @return Response
+   */
+  public function showEvent($id)
+  {
+    return view('events.single', ['event' => Event::findBySlugOrIdOrFail($id)]);
   }
 }

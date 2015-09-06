@@ -37,4 +37,5 @@ class RegionalClub extends Model implements SluggableInterface
   {
     return $this->belongsTo('App\Province');
   }
+
 }

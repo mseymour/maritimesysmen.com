@@ -2,9 +2,9 @@
 
 $palettes: (
   red: (
-    base:  #777,
-    light: #CCC,
-    dark: #444
+    base:  #FF0E24,
+    light: lighten(#FF0E24, 25%),
+    dark: darken(#FF0E24, 25%)
   ),
   blue: (
     base:  #777,

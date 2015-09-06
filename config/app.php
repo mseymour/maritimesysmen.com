@@ -149,6 +149,7 @@ return [
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
         Caffeinated\Menus\MenusServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+        Toin0u\Geocoder\GeocoderServiceProvider::class,
 
     ],
 
@@ -203,6 +204,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Menu' => Caffeinated\Menus\Facades\Menu::class,
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+        'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class,
 
     ],
 

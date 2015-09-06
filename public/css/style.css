@@ -3,7 +3,7 @@
 @import url(webfonts/entypo/font.css);
 @import url(normalize.css);
 .masthead {
-  background-color: #777;
+  background-color: #FF0E24;
   color: #FFF; }
   .masthead a {
     color: inherit; }
@@ -82,7 +82,7 @@
     .site-nav > ul > li a small {
       font-size: 8pt;
       display: block;
-      color: #CCC;
+      color: #ff8e98;
       margin-top: 2pt; }
   .site-nav > ul > li > a {
     font: 300 12pt/1.2 "raleway-web", sans-serif;
@@ -96,20 +96,20 @@
   .site-nav > ul > li:hover, .site-nav > ul > li:focus {
     background-color: #FFF; }
     .site-nav > ul > li:hover > a, .site-nav > ul > li:focus > a {
-      color: #777; }
+      color: #FF0E24; }
   .site-nav > ul > li > ul {
     display: none;
     position: absolute;
     top: 100%;
     min-width: 150pt;
     background-color: #FFF;
-    box-shadow: inset 0px 8px 15px -12px #595959; }
+    box-shadow: inset 0px 8px 15px -12px #bf0b1b; }
     .site-nav > ul > li > ul li a {
       white-space: nowrap;
       padding: 8pt;
-      color: #777; }
+      color: #FF0E24; }
       .site-nav > ul > li > ul li a:hover, .site-nav > ul > li > ul li a:focus {
-        background-color: #777;
+        background-color: #FF0E24;
         color: #FFF; }
   .site-nav > ul > li:hover > ul, .site-nav > ul > li:focus > ul {
     display: block; }
