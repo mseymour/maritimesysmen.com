@@ -4,10 +4,10 @@
   @include container;
   .card {
     @include gallery(12);
-    @include breakpoint (320px) {
+    @include susy-breakpoint(560px) {
       @include gallery(6);
     }
-    @include breakpoint(820px) {
+    @include susy-breakpoint(820px) {
       @include gallery(4);
     }
     margin-bottom: gutter();

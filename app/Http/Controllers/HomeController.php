@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Event;
+use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
+
+use App\Event;
 
 class HomeController extends Controller
 {
@@ -13,7 +16,7 @@ class HomeController extends Controller
    * @param  int  $id
    * @return Response
    */
-  public function showIndex()
+  public function index()
   {
       return view('home', ['events_major' => Event::majorEvents(), 'events_other' => Event::otherEvents()]);
   }

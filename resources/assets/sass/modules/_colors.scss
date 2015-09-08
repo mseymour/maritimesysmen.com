@@ -3,7 +3,7 @@
 $palettes: (
   red: (
     base:  #FF0E24,
-    light: lighten(#FF0E24, 25%),
+    light: lighten(#FF0E24, 33%),
     dark: darken(#FF0E24, 25%)
   ),
   blue: (
@@ -13,7 +13,7 @@ $palettes: (
   ),
   gray: (
     base:  #777,
-    light: #CCC,
+    light: #F6F6F6,
     dark: #444
   )
 );

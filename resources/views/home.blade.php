@@ -2,13 +2,16 @@
 
 @section('title', 'Homepage')
 
-@section('content')
+@section('hero')
 <section class="intro hero" style="text-align: center; background-image: url('img/homebg.jpg'); background-size: cover; background-position: center 15%;">
-  <div class="wrap" style="margin-top: 100px; margin-bottom: 100px;">
+  <div class="wrap" style="padding-top: 100px; padding-bottom: 100px;">
     <img src="img/hero-welcome.svg" alt="We are the Maritimes Y&rsquo;s Men &mdash; Situated in the Atlantic Canadian provinces of New Brunswick, Nova Scotia, and Prince Edward Island, we serve our local YMCAs and volunteer in our communities.">
     <a aria-label="Learn More!" class="cta" href="about" role="button">Learn More!</a>
   </div>
 </section>
+@endsection
+
+@section('content')
 @foreach ($events_major as $event)
 <section class="convention">
   <div class="wrap">

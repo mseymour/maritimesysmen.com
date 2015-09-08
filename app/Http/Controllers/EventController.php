@@ -2,29 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use App\Event;
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
+
+use App\Event;
 
 class EventController extends Controller
 {
-  /**
-   * Show the club for the given ID.
-   *
-   * @param  int  $id
-   * @return Response
-   */
-  public function showIndex()
-  {
-    return view('events.index', ['events' => Event::all()]);
-  }
-  /**
-   * Show the club for the given ID.
-   *
-   * @param  int  $id
-   * @return Response
-   */
-  public function showEvent($id)
-  {
-    return view('events.single', ['event' => Event::findBySlugOrIdOrFail($id)]);
-  }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function index()
+    {
+        return view('events.index', ['events' => Event::all()]);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        return view('events.single', ['event' => Event::findBySlugOrIdOrFail($id)]);
+    }
 }

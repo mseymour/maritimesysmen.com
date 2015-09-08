@@ -1,8 +1,27 @@
 <footer class="mainfooter" role="contentinfo">
-  <nav class="wrap">
-    {!! $menu_main->asUl(['class' => 'site-nav-list']) !!}
+  <nav class="wrap interests">
+    <section>
+      <h1>Y&rsquo;s Men Maritimes Region</h1>
+      {!! $menu_footer_region->asUl() !!}
+    </section>
+    <section>
+      <h1>Clubs and Regional Team</h1>
+      <ul>
+        <li><a href="#">Submit a report</a></li>
+        <li><a href="#">Officer&rsquo;s Handbook</a></li>
+        <li><a href="#">Log In</a></li>
+      </ul>
+    </section>
+    <section>
+      <h1>Social</h1>
+      <ul>
+        <li><a href="http://maritimesysmen.blogspot.ca">Blog</a></li>
+        <li><a href="http://www.facebook.com/groups/204289452946466/">Facebook</a></li>
+        <li><a href="https://twitter.com/maritimesysmen">Twitter</a></li>
+      </ul>
+    </section>
   </nav>
-  <div class="wrap">
+  <div class="wrap colophon">
     <div class="logo">
       <img src="/img/logo-white-512.png" alt="[logo] Logo of Y's Men and Y Service Clubs International">
     </div>

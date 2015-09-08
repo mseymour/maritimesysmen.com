@@ -16,8 +16,8 @@
       width: $target-size * 0.5;
       height: $bar-height;
       background-color: #FFF;
-      transform: translate3d(0,0,0);
       transition: transform 0.66s;
+      -webkit-transform: perspective(1px) scale(1.1) translate3d(0,0,0);
     }
     & { 
       left: ($target-size / 4);
@@ -37,8 +37,6 @@
   }
 }
 
-
-// TODO: Simplify navigation down to top level and single sub-level menu
 .site-nav {
   a { text-decoration: none; }
   ul { 
@@ -50,12 +48,24 @@
   // Top-level navigation
   > ul {
     > li { 
-      display: inline-block;
+      @include susy-breakpoint(950px) {
+        &:nth-child(-n+2) {
+          float: left;
+          width: 22.2222%; 
+        }
+        &:nth-last-child(-n+2) {
+          float: right;
+          text-align: right;
+          width: 22.2222%; 
+        }
+      }
+      //display: inline-block;
       position: relative;
       vertical-align: top;
       a { 
         display: block;
         small { font-size: 8pt; display: block; color: palette(red,light); margin-top: 2pt; }
+        transition: all 0.3s ease;
       }
       > a { 
         font: 300 12pt/1.2 'raleway-web', sans-serif;
@@ -63,32 +73,36 @@
         padding: 0 8pt;
         color: #FFF;
         text-transform: uppercase;
-        span { display: block; padding-top: 24px; }
-      }
-      &:hover, &:focus {
-        background-color: #FFF;
-        > a { color: palette(red); }
-      }
-      // Submenu
-      > ul { 
-        display: none;
-        position: absolute;
-        top: 100%;
-        min-width: 150pt;
-        background-color: #FFF;
-        box-shadow: inset 0px 8px 15px -12px mix(palette(red), #000, 75%);
-        // Individual items
-        li a {
-          white-space: nowrap;
-          padding: 8pt;
+        span {
+          display: block;
+          padding-top: 18px;
+        }
+        &:hover, &:focus, &.active {
+          background-color: #FFF;
           color: palette(red);
-          &:hover, &:focus {
-            background-color: palette(red);
-            color: #FFF;
-          }
         }
       }
-      &:hover, &:focus { > ul { display: block; } }
+      // Submenu
+//      > ul {
+//        display: none;
+//        position: absolute;
+//        z-index: 2;
+//        top: 100%;
+//        min-width: 150pt;
+//        background-color: #FFF;
+//        box-shadow: inset 0px 8px 15px -12px mix(palette(red), #000, 75%);
+//        // Individual items
+//        li a {
+//          white-space: nowrap;
+//          padding: 8pt;
+//          color: palette(red);
+//          &:hover, &:focus {
+//            background-color: palette(red);
+//            color: #FFF;
+//          }
+//        }
+//      }
+//      &:hover, &:focus { > ul { display: block; } }
     }
   }
 }

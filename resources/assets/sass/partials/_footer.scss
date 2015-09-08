@@ -4,6 +4,15 @@
   color: contrasting-color($bg-color, #FFF, #000);
   a { color: inherit; }
 
+  .interests {
+    > * {
+      @include span(4);
+      &:nth-child(3) { @include last; }
+    }
+    h1 { font-size: 16pt; }
+    ul li::before { content: none; }
+  }
+
   .logo { 
     @include span(2);
     img { max-width: 100%; }
@@ -18,7 +27,7 @@
     }
   }
 
-  @include breakpoint(321px) {
+  @include susy-breakpoint(320px) {
     .logo { @include span(1); }
     .cr { @include span(11 last); }
   }

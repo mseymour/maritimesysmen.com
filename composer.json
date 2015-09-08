@@ -11,8 +11,9 @@
         "cviebrock/eloquent-sluggable": "dev-master",
         "laravelcollective/html": "^5.1",
         "caffeinated/menus": "^2.1",
-        "kris/laravel-form-builder": "^1.6",
-        "toin0u/geocoder-laravel": "^0.6.0"
+        "toin0u/geocoder-laravel": "^0.6.0",
+        "jmikola/geojson": "^1.0",
+        "intervention/imagecache": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

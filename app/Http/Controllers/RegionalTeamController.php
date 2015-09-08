@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\RegionalTeamMember;
+use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
+
+use App\RegionalTeamMember;
 
 class RegionalTeamController extends Controller
 {
@@ -12,7 +15,7 @@ class RegionalTeamController extends Controller
    *
    * @return Response
    */
-  public function showIndex()
+  public function index()
   {
       return view('team.members', ['team' => RegionalTeamMember::all()]);
   }

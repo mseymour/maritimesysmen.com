@@ -11,16 +11,18 @@
 |
 */
 
-Route::get('/', ['as' => 'home.page', 'uses' => 'HomeController@showIndex']);
+Route::get('/', ['as' => 'home.page', 'uses' => 'HomeController@index']);
 
-Route::get('clubs', ['as' => 'page.clubs', 'uses' => 'RegionalClubController@showIndex']);
-Route::get('clubs/{id}', ['as' => 'page.club', 'uses' => 'RegionalClubController@showClub']);
+Route::get('about', ['as' => 'page.about', 'uses' => 'AboutController@showTheRegion']);
 
-Route::get('team', ['as' => 'page.team', 'uses' => 'RegionalTeamController@showIndex']);
+Route::get('clubs', ['as' => 'page.clubs', 'uses' => 'RegionalClubController@index']);
+Route::get('clubs/{id}', ['as' => 'page.club', 'uses' => 'RegionalClubController@show']);
 
-Route::get('events', ['as' => 'page.events', 'uses' => 'EventController@showIndex']);
-Route::get('events/{id}', ['as' => 'page.event', 'uses' => 'EventController@showEvent']);
+Route::get('team', ['as' => 'page.team', 'uses' => 'RegionalTeamController@index']);
 
-Route::get('convention', ['as' => 'page.events.convention', function () {
-  return Redirect::to('events/2016-maritime-regional-convention', 303);
-}]);
+Route::get('events', ['as' => 'page.events', 'uses' => 'EventController@index']);
+Route::get('events/{id}', ['as' => 'page.event', 'uses' => 'EventController@show']);
+
+Route::group(['prefix' => 'api'], function () {
+    Route::get('clubs', ['as' => 'api.clubs', 'uses' => 'RegionalClubController@clubsGeoJson']);
+});

@@ -1,6 +1,6 @@
 @foreach($items as $item)
     <li @if($item->hasChildren())class ="dropdown"@endif>
-        @if($item->link) <a @if($item->hasChildren()) class="dropdown-toggle" data-toggle="dropdown" @endif href="{{ $item->url() }}">
+        @if($item->link) <a @if($item->hasChildren()) {!! $item->attribute(['class' => 'dropdown-toggle'])->attributes() !!} data-toggle="dropdown" @else {!! $item->attributes() !!} @endif href="{{ $item->url() }}">
             <span>{!! $item->title !!}</span>
             @if($item->hasChildren()) @endif
         </a>
