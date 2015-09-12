@@ -20,8 +20,8 @@ class AppServiceProvider extends ServiceProvider
                    $club->meeting_place_city . ', ' .
                    $club->meeting_place_province->code.' '.
                    $club->meeting_place_postal_code);
-        $club->meeting_place_lat = getLatitude();
-        $club->meeting_place_long = getLongitude();
+        $club->meeting_place_lat = $geocode->getLatitude();
+        $club->meeting_place_long = $geocode->getLongitude();
       });
     }
 

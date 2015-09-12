@@ -14,8 +14,9 @@
 </section>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoibWFya3NleW1vdXIiLCJhIjoiM3NyQlRJayJ9.v4kbFAbqZnHrdFYJtKlPgA';
-var map = L.mapbox.map('clubs-map', 'markseymour.l5lefiij');
-var featureLayer = L.mapbox.featureLayer('markseymour.l5lefiij')
+var map = L.mapbox.map('clubs-map', 'markseymour.ndif9c29');
+map.scrollWheelZoom.disable();
+var featureLayer = L.mapbox.featureLayer('markseymour.ndif9c29')
     .loadURL('/api/clubs')
 .addTo(map).on('ready', function(e) {
     map.fitBounds(featureLayer.getBounds());

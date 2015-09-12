@@ -37,8 +37,15 @@ class DatabaseSeeder extends Seeder
             \App\RegionalClub::all(),
             \App\RegionalDistrict::all(),
             \App\RegionalPresident::all(),
-            \App\RegionalTeamMember::all()
+            \App\RegionalTeamMember::all(),
         ];
+
+        // foreach($sluggableModels[1] as $c):
+        //     $geocode = \Geocoder::geocode($c->meeting_place_address . ' ' .$c->meeting_place_city . ', ' .$c->meeting_place_province->code.' '.$c->meeting_place_postal_code);
+        //     $c->meeting_place_lat = $geocode->getLatitude();
+        //     $c->meeting_place_long = $geocode->getLongitude();
+        //     $c->save();
+        // endforeach;
 
         foreach ($sluggableModels as $sluggableModel) {
             foreach ($sluggableModel as $post) {

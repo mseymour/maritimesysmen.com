@@ -1,6 +1,6 @@
 <div id="{{ $club->slug }}" itemscope itemtype="http://schema.org/Organization">
   <h2 class="card-heading name">
-    <img src="http://api.tiles.mapbox.com/v4/mapbox.streets/pin-l-star+FF0E24({{ $club->meeting_place_long }},{{ $club->meeting_place_lat }})/{{ $club->meeting_place_long }},{{ $club->meeting_place_lat }},14/96x96.png?access_token=pk.eyJ1IjoibWFya3NleW1vdXIiLCJhIjoiM3NyQlRJayJ9.v4kbFAbqZnHrdFYJtKlPgA" alt="" class="card-heading-icon">
+    <img src="http://api.tiles.mapbox.com/v4/markseymour.ndif9c29/pin-l-star+FF0E24({{ $club->meeting_place_long }},{{ $club->meeting_place_lat }})/{{ $club->meeting_place_long }},{{ $club->meeting_place_lat }},14/96x96.png?access_token=pk.eyJ1IjoibWFya3NleW1vdXIiLCJhIjoiM3NyQlRJayJ9.v4kbFAbqZnHrdFYJtKlPgA" alt="" class="card-heading-icon">
     <span itemprop="name">
       <a itemprop="url" href="{{ $club->url }}">{{ $club->name }}</a>
     </span>
