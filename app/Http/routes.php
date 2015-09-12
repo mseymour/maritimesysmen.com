@@ -11,18 +11,12 @@
 |
 */
 
-Route::get('/', ['as' => 'home.page', 'uses' => 'HomeController@index']);
-
-Route::get('about', ['as' => 'page.about', 'uses' => 'AboutController@showTheRegion']);
-
-Route::get('clubs', ['as' => 'page.clubs', 'uses' => 'RegionalClubController@index']);
-Route::get('clubs/{id}', ['as' => 'page.club', 'uses' => 'RegionalClubController@show']);
-
-Route::get('team', ['as' => 'page.team', 'uses' => 'RegionalTeamController@index']);
-
-Route::get('events', ['as' => 'page.events', 'uses' => 'EventController@index']);
-Route::get('events/{id}', ['as' => 'page.event', 'uses' => 'EventController@show']);
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('about', ['as' => 'about', 'uses' => 'AboutController@showTheRegion']);
+Route::resource('clubs', 'RegionalClubController', ['only' => ['index', 'show']]);
+Route::get('team', ['as' => 'regional_team', 'uses' => 'RegionalTeamController@index']);
+Route::resource('events', 'EventController', ['only' => ['index', 'show']]);
 
 Route::group(['prefix' => 'api'], function () {
-    Route::get('clubs', ['as' => 'api.clubs', 'uses' => 'RegionalClubController@clubsGeoJson']);
+    Route::get('clubs', ['uses' => 'RegionalClubController@clubsGeoJson']);
 });

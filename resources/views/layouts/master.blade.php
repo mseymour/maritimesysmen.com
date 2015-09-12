@@ -7,6 +7,11 @@
   <link href="/css/style.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="/js/app.js"></script>
+  @if ( Config::get('app.debug') )
+    <script type="text/javascript">
+      document.write('<script src="//localhost:35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+    </script> 
+  @endif
   @yield('head')
 </head>
 <body>

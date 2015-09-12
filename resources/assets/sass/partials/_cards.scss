@@ -3,44 +3,44 @@
   list-style: none;
   @include container;
   .card {
-    @include gallery(12);
-    @include susy-breakpoint(560px) {
-      @include gallery(6);
-    }
-    @include susy-breakpoint(820px) {
-      @include gallery(4);
-    }
+//    @include gallery(6);
+//    @include susy-breakpoint(560px) {
+//      @include gallery(6);
+//    }
+//    @include susy-breakpoint(820px) {
+//      @include gallery(4);
+//    }
     margin-bottom: gutter();
   }
 }
 
-$icon-square-size: 96px;
-
 .card {
-  background-color: #FFF;
-  border-radius: 2pt;
-  box-shadow: 0 2pt 4pt rgba(0,0,0,.25);
-  margin-top: ($icon-square-size / 2);
+  &-heading { 
+    font-family: 'raleway-web', sans-serif;
+    h1 {
+      font-size: 16pt;
+      text-transform: uppercase;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    em {
+      font-style: normal;
+      color: palette(gray);
+      &::after {
+        content: '•';
+        font-family: 'raleway-web', sans-serif;
+        font-style: normal;
+        margin-left: .25em;
+      }
+    }
+  }
 }
 
-.card-wrap { padding: 6pt; }
-
-.card-heading {
-  text-align: center;
-  background-color: palette(blue);
-  color: contrasting-color(palette(blue), #FFF, #000);
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: ($icon-square-size / 2) 6pt 6pt;
-  position: relative;
-  a { color: inherit; text-decoration: none; }
-  &-icon {
-    position: absolute;
-    width: $icon-square-size;
-    height: $icon-square-size;
-    top: -($icon-square-size / 2);
-    left: 50%;
-    margin-left: -($icon-square-size / 2);
-    border-radius: 50%;
-  }
+.catchword {
+  font-size: .7333em;
+  font-weight: 200;
+  vertical-align: 0.1335em;
 }

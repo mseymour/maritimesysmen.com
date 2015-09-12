@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+require('laravel-elixir-livereload');
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -23,4 +25,6 @@ elixir(function(mix) {
         'node_modules/mathsass/dist'
       ]
     });
+
+    mix.livereload();
 });

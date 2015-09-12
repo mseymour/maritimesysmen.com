@@ -1,5 +1,5 @@
 <div itemscope itemtype="http://schema.org/Event">
-  <h1><a itemprop="url" href="{{ route('page.events', $event->slug) }}"><span itemprop="name">{{ $event->title }}</span></a></h1>
+  <h1><a itemprop="url" href="{{ route('events.show', $event->slug) }}"><span itemprop="name">{{ $event->title }}</span></a></h1>
   <meta itemprop="startDate" content="{{ $event->start_date }}">
   <meta itemprop="endDate" content="{{ $event->end_date }}">
 

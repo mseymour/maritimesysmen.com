@@ -29,3 +29,11 @@ function date_range_to_str($dtstart, $dtend)
            (($spans_month) ? $end->format('F ') : '') .
            $end->format('j<\s\up>S</\s\up>, Y');
 }
+
+function html_catchwordify ($string, $words = ['&']) {
+    $patterns = array();
+    foreach($words as $word)
+        $patterns[] = '/('.preg_quote(htmlentities($word)).')/i';
+
+    return preg_replace($patterns, '<span class="catchword">$0</span>', htmlentities($string));
+}

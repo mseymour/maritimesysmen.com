@@ -22,7 +22,7 @@
     </h1>
     <p>00 weeks, 00 days away</p>
     @if ($event->registration_url) <a aria-label="Register Now" class="cta" href="{{ $event->registration_url }}" role="button">Register Now</a> @endif
-    <a aria-label="Learn More" class="cta" href="{{ route('page.events', $event->slug) }}" role="button">Learn More</a>
+    <a aria-label="Learn More" class="cta" href="{{ route('events.show', $event->slug) }}" role="button">Learn More</a>
     
   </div>
 </section>
