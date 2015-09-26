@@ -11,6 +11,22 @@ function content_for($section)
     return array_key_exists($section, app('view')->getSections());
 }
 
+function region_year($date = null)
+{
+  if($date == null) {
+    $date = new \DateTime();
+  }
+  $current_month = (int)$date->format('n');
+  if($current_month <= 8) {
+    $next_year = (int)$date->format('Y');
+    $current_year = $next_year - 1;
+  } else {
+    $current_year = (int)$date->format('Y');
+    $next_year = $current_year + 1;
+  }
+  return compact('current_year', 'next_year');
+}
+
 function date_range_to_str($dtstart, $dtend)
 {
     $start         = Carbon\Carbon::instance($dtstart);

@@ -1,23 +1,21 @@
 // http://www.ppgvoiceofcolor.com/collections/regional-collections/nova-scotia
+// https://coolors.co/app/e3000e-ffba08-3f88c5-262626-255c99
 
 $palettes: (
-  red: (
-    base:  #FF0E24,
-    light: lighten(#FF0E24, 33%),
-    dark: darken(#FF0E24, 25%)
-  ),
-  blue: (
-    base:  #777,
-    light: #CCC,
-    dark: #444
-  ),
-  gray: (
-    base:  #777,
-    light: #F6F6F6,
-    dark: #444
-  )
+  primary: #E3000E,
+  secondary: #FFBA08,
+  tertiary: #3F88C5,
+  body: #262626
 );
 
-@function palette($palette, $tone: 'base') {
-    @return map-get(map-get($palettes, $palette), $tone);
+@function palette($palette) {
+  @return map-get($palettes, $palette);
+}
+
+@function palette-tint($palette, $percent: 10%) {
+  @return mix(white, palette($palette), $percent);
+}
+
+@function palette-shade($palette, $percent: 10%) {
+  @return mix(black, palette($palette), $percent);
 }

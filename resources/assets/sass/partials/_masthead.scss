@@ -1,6 +1,6 @@
 .masthead {
   position: relative;
-  $bg-color: palette(red);
+  $bg-color: palette(primary);
   background-color: $bg-color;
   color: contrasting-color($bg-color, #FFF, #000);
   a { color: inherit; }

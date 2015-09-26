@@ -18,7 +18,7 @@ class RegionalClubController extends Controller
    */
   public function index()
   {
-    return view('clubs.clubs', ['districts' => RegionalDistrict::all()]);
+    return view('clubs.clubs', ['districts' => RegionalDistrict::with('clubs.president', 'clubs.meeting_place_province')->get()]);
   }
 
   /**

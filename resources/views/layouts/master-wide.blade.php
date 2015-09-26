@@ -17,7 +17,7 @@
 <body>
   @include('partials.layouts.header')
   @yield('hero')
-  <main id="content" class="maincontent">
+  <main id="content" class="main-content">
     @yield('content')
   </main>
   @include('partials.layouts.footer')

@@ -3,12 +3,12 @@
 @section('title', 'Clubs')
 
 @section('head')
-<!-- Mapbox.js - Map --> <!--
+<!-- Mapbox.js - Map -->
 <script src="https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
-<link href="https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" /> -->
+<link href="https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
 @endsection
 
-@section('hero')<!--
+@section('hero')
 <section id="clubs-map" style="width:100%;height:500px">
   
 </section>
@@ -22,11 +22,11 @@ var featureLayer = L.mapbox.featureLayer('markseymour.ndif9c29')
     map.fitBounds(featureLayer.getBounds());
 });
 </script>
--->@endsection
+@endsection
 
 @section('content')
 @foreach ($districts as $district)
-<h1>{!! html_catchwordify($district->name) !!}</h1>
+<h1 class="h-major h-major-around"><span>{!! html_catchwordify($district->name) !!}</span></h1>
 <ul class="cards">
   @foreach ($district->clubs as $club)
   <li class="card">

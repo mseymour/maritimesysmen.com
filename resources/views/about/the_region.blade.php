@@ -18,7 +18,7 @@
 @section('content')
 <section class="wrap" id="about">
   
-  <h1>About the Maritimes Region</h1>
+  <h1 class="h-major h-major-around"><span><small>About the</small> Maritimes Region</span></h1>
 
   <p class="lead">The Maritimes Region encompasses the eastern Canadian provinces of New Brunswick, Nova Scotia, Prince Edward Island and Newfoundland. 
   There are three districts &mdash; the Cape Breton District, the Northumberland District and the Saint John River Valley District with a total of 12 clubs.</p>
@@ -41,7 +41,7 @@
 <hr class="page-hr">
 
 <section class="wrap" id="area-canada-caribbean">
-  <h1>Area Canada and Caribbean</h1>
+  <h1>Area Canada <span class="catchword">&amp;</span> Caribbean</h1>
 
   <aside class="page-aside">
     <h1>Links to sites</h1>

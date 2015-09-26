@@ -1,16 +1,35 @@
 .mainfooter {
-  $bg-color: palette(blue);
+  > .wrap + .wrap { margin-top: 18pt; }
+  $bg-color: palette(body);
   background-color: $bg-color;
   color: contrasting-color($bg-color, #FFF, #000);
-  a { color: inherit; }
+  a {
+    color: inherit;
+    &:hover, &:focus, &:active { border-bottom: 2px solid palette-shade(secondary, 5%); }
+    &:focus { border-bottom-color: palette-shade(primary, 5%); }
+    &:active { border-bottom-color: palette(primary); }
+  }
 
   .interests {
-    > * {
+    > section {
       @include span(4);
       &:nth-child(3) { @include last; }
+      > ul {
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        & + ul {
+          margin-top: 18pt;
+        }
+      }
     }
-    h1 { font-size: 16pt; }
-    ul li::before { content: none; }
+    h1 {
+      font-size: inherit;
+      text-transform: uppercase;
+      letter-spacing: 2pt;
+      margin-top: 0;
+      margin-bottom: 18pt;
+    }
   }
 
   .logo { 

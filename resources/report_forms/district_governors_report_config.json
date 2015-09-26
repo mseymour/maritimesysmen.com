@@ -1,0 +1,20 @@
+{
+  "label":"District Governor's Report",
+  "form": [
+    {"type":"fieldset", "label":"Identification", "content": [
+      {"type":"input", "label":"Full Name", "placeholder":"John Doe", "required":true},
+      {"type":"input", "label":"Email Address", "placeholder":"john.doe@example.org"},
+      {"type":"input", "label":"District", "required":true},
+      {"type":"month+year", "label":"Month of", "required":true}
+    ]},
+    {"type":"fieldset", "label":"Club Meetings Attended", "content": [
+      {"type":"textarea", "label":"Indicated details for any change in above (name and/or address)", "required":true},
+      {"type":"textarea", "label":"Regular Meetings", "required":true},
+      {"type":"textarea", "label":"Board Meetings", "required":true},
+      {"type":"textarea", "label":"Special Meetings", "required":true},
+      {"type":"textarea", "label":"Clubs"},
+      {"type":"textarea", "label":"Visited / Occasion / Date", "required":true},
+      {"type":"textarea", "label":"Special Remarks"}
+    ]}
+  ]
+}

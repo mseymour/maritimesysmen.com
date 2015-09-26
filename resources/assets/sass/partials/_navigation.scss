@@ -64,8 +64,13 @@
       vertical-align: top;
       a { 
         display: block;
-        small { font-size: 8pt; display: block; color: palette(red,light); margin-top: 2pt; }
-        transition: all 0.3s ease;
+        small {
+          font-size: 8pt;
+          display: block;
+          color: palette-tint(primary, 75%);
+          margin-top: 2pt;
+        }
+        &, & small { transition: all 0.3s ease; }
       }
       > a { 
         font: 300 12pt/1.2 'raleway-web', sans-serif;
@@ -77,9 +82,19 @@
           display: block;
           padding-top: 18px;
         }
-        &:hover, &:focus, &.active {
+        &:hover {
+          background-color: palette-tint(primary, 45%);
+          small { color: palette-tint(primary, 80%); }
+        }
+        &:focus, &:active {
+          background-color: palette-tint(primary, 80%);
+          color: palette(primary);
+          small { color: palette(primary); }
+        }
+        &.active {
           background-color: #FFF;
-          color: palette(red);
+          color: palette(primary);
+          small { color: palette-tint(primary, 25%); }
         }
       }
       // Submenu
@@ -90,14 +105,14 @@
 //        top: 100%;
 //        min-width: 150pt;
 //        background-color: #FFF;
-//        box-shadow: inset 0px 8px 15px -12px mix(palette(red), #000, 75%);
+//        box-shadow: inset 0px 8px 15px -12px mix(palette(primary), #000, 75%);
 //        // Individual items
 //        li a {
 //          white-space: nowrap;
 //          padding: 8pt;
-//          color: palette(red);
+//          color: palette(primary);
 //          &:hover, &:focus {
-//            background-color: palette(red);
+//            background-color: palette(primary);
 //            color: #FFF;
 //          }
 //        }

@@ -1,0 +1,14 @@
+{
+  "label":"Regional Director's Report",
+  "form": [
+    {"type":"fieldset", "label":"Identification", "content": [
+      {"type":"input", "label":"Full Name", "placeholder":"John Doe", "required":true},
+      {"type":"input", "label":"Email Address", "placeholder":"john.doe@example.org"},
+      {"type":"month+year", "label":"Month of", "required":true}
+    ]},
+    {"type":"fieldset", "label":"Club attendances", "content": [
+      {"type":"textarea", "label":"Club names and dates, as well as type (Regular, board, special, etc.)", "required":true},
+      {"type":"textarea", "label":"Special remarks (Do clubs need help from DG's, RSD, AP?)"}
+    ]}
+  ]
+}

@@ -13,7 +13,7 @@
       <span itemprop="addressRegion">{{ $event->location_province->name }}</span>
     </div>
   </div>
-  <ul>
+  <ul class="underlined-links">
   @foreach ($event->links as $link)
     <li>{!! link_to($link->url, $link->title) !!}</li>
   @endforeach

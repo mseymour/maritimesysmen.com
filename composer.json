@@ -13,7 +13,8 @@
         "caffeinated/menus": "^2.1",
         "toin0u/geocoder-laravel": "^0.6.0",
         "jmikola/geojson": "^1.0",
-        "intervention/imagecache": "^2.3"
+        "intervention/imagecache": "^2.3",
+        "barryvdh/laravel-debugbar": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

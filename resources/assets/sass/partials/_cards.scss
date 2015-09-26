@@ -3,44 +3,68 @@
   list-style: none;
   @include container;
   .card {
-//    @include gallery(6);
-//    @include susy-breakpoint(560px) {
-//      @include gallery(6);
-//    }
+    @include gallery(6);
+    @include susy-breakpoint(560px) {
+      @include gallery(6);
+    }
 //    @include susy-breakpoint(820px) {
 //      @include gallery(4);
 //    }
-    margin-bottom: gutter();
+    margin-bottom: .75em();
   }
 }
 
 .card {
-  &-heading { 
+  .main-content &::before, .main-content & li::before { content: none; }
+  &-header { 
+    //border-bottom: 1px solid;
     font-family: 'raleway-web', sans-serif;
     h1 {
       font-size: 16pt;
       text-transform: uppercase;
-      margin: 0;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
+      small { text-transform: none; font-size: 13pt; }
     }
-    em {
-      font-style: normal;
-      color: palette(gray);
-      &::after {
-        content: '•';
-        font-family: 'raleway-web', sans-serif;
-        font-style: normal;
-        margin-left: .25em;
-      }
+    margin-bottom: .75em();
+    &::after {
+      content: '';
+      display: block;
+      width: 4.44em;
+      height: 2px;
+      margin-top: .75em();
+      background-color: palette-tint(body);
     }
   }
-}
-
-.catchword {
-  font-size: .7333em;
-  font-weight: 200;
-  vertical-align: 0.1335em;
+  &-info {
+    @include container;
+    > dt { @include span(3 first); text-align: right; }
+    > dd { margin-left: 0; @include span(9 last) }
+    &, & > *:nth-child(n+3) { margin-top: .75em(); margin-bottom: .75em(); }
+    a { @extend %link; }
+    &-link {
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    h2, h3 {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      margin: 0;
+    }
+  }
+  &-label {
+    //font-size: 12pt;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: lowercase;
+    color: palette-shade(tertiary, 5%);
+    &::after {
+      content: '•';
+      font-family: 'raleway-web', sans-serif;
+      font-style: normal;
+      margin-left: .25em;
+    }
+  }
 }

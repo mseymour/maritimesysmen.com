@@ -11,12 +11,23 @@ use App\RegionalTeamMember;
 class RegionalTeamController extends Controller
 {
   /**
-   * Show the club for the given ID.
+   * Show the regional team.
    *
    * @return Response
    */
   public function index()
   {
-      return view('team.members', ['team' => RegionalTeamMember::all()]);
+      return view('team.members', ['team' => RegionalTeamMember::all(), 'years' => region_year()]);
+  }
+
+  /**
+   * Show the team member for the given ID.
+   *
+   * @param  int  $id
+   * @return Response
+   */
+  public function show($id)
+  {
+    return view('team.member', ['member' => RegionalTeamMember::findBySlugOrIdOrFail($id)]);
   }
 }

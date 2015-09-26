@@ -150,6 +150,7 @@ return [
         Caffeinated\Menus\MenusServiceProvider::class,
         Toin0u\Geocoder\GeocoderServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        //Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
@@ -205,7 +206,6 @@ return [
         'Menu' => Caffeinated\Menus\Facades\Menu::class,
         'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class,
         'Image' => Intervention\Image\Facades\Image::class,
-
     ],
 
 ];
