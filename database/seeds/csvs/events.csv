@@ -1,4 +1,4 @@
 id,title,start_date,end_date,location_name,location_address,location_city,location_province_id,description,registration_url,major
-1,2016 Maritime Regional Convention,2016-05-27T00:00:00Z-04:00,2016-05-29T23:59:59Z-04:00,Pictou County,Pictou County,Pictou County,2,68th Maritime Regional Convention.,http://example.com/,1
-2,XYZ Convention 2016,2016-04-06T13:00:00Z-04:00,2016-04-08T13:00:00Z-04:00,Cumberland YMCA,30 Church St.,Amherst,2,Just some long-winded description or whatever.,,1
+1,2016 Maritime Regional Convention,2016-05-27T00:00:00Z-04:00,2016-05-29T23:59:59Z-04:00,Pictou County,Pictou County,Pictou County,2,68th Maritime Regional Convention — “Take a Chance on Change”,http://example.com/,1
+2,XYZ Convention 2016,2016-04-06T13:00:00Z-04:00,2016-04-08T13:00:00Z-04:00,Cumberland YMCA,30 Church St.,Amherst,2,Just some long-winded description or whatever.,,0
 3,XYZ Event,2016-04-07T13:00:00Z-04:00,2016-04-09T13:00:00Z-04:00,Some place,36 Brookshire Court,Bedford,2,Another long description. Woo!,,0

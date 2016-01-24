@@ -14,7 +14,7 @@ require('laravel-elixir-livereload');
  */
 
 elixir(function(mix) {
-    mix.copy('resources/assets/img', 'public/img');
+    mix.copy('resources/assets/images', 'public/img');
     mix.copy('resources/assets/css', 'public/css');
     mix.scripts(['jquery.matchHeight-min.js', 'app.js'], 'public/js/app.js');
 

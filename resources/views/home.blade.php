@@ -17,11 +17,11 @@
 <section class="convention">
   <div class="wrap">
     <h1 class="convention-headline">
-      <span class="name">{{ $event->title }}</span>
-      <span class="location"><span class="catchword">in</span> <span class="city">{{ $event->location_name }}, {{ $event->location_province->name }}</span></span>
+      <span class="name">{{ $event->title }}</span><br>
+      <span class="location"><span class="catchword">in</span> <span class="city">{{ $event->location_name }}, {{ $event->location_province->name }}</span></span><br>
       <time class="time" datetime="2015-05-15">{!! date_range_to_str($event->start_date, $event->end_date) !!}</time>
     </h1>
-    <p>00 weeks, 00 days away</p>
+    <h2>34 weeks, 6 days away</h2>
     @if ($event->registration_url) <a aria-label="Register Now" class="cta" href="{{ $event->registration_url }}" role="button">Register Now</a> @endif
     <a aria-label="Learn More" class="cta" href="{{ route('events.show', $event->slug) }}" role="button">Learn More</a>
     

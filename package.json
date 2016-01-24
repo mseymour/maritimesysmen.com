@@ -7,8 +7,8 @@
   "dependencies": {
     "bootstrap-sass": "^3.0.0",
     "breakpoint-sass": "^2.6.1",
-    "laravel-elixir": "^3.0.0",
+    "laravel-elixir": "^4.0.0",
     "mathsass": "^0.9.5",
-    "susy": "^2.2.5"
+    "susy": "^2.2.7"
   }
 }
