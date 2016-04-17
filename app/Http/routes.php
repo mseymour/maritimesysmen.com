@@ -17,12 +17,13 @@ Route::resource('clubs', 'RegionalClubController', ['only' => ['index', 'show']]
 Route::resource('regional-team', 'RegionalTeamController', ['only' => ['index', 'show']]);
 Route::resource('events', 'EventController', ['only' => ['index', 'show']]);
 
-Route::get('reports/presidents', function () {
-  return view('reports.presidents');
-});
+Route::get('reports', ['as' => 'reports.index', 'uses' => 'ReportController@index']);
+Route::get('reports/{reportform}', ['as' => 'reports.create', 'uses' => 'ReportController@create']);
+Route::post('reports/{reportform}', ['as' => 'reports.store', 'uses' => 'ReportController@store']);
 
-Route::group(['prefix' => 'api'], function () {
-    Route::get('clubs', ['uses' => 'RegionalClubController@clubsGeoJson']);
+Route::group(['prefix' => 'api/v1', 'namespace' => 'API\V1'], function () {
+    Route::get('clubs.geojson', ['as' => 'api.v1.clubs.index', 'uses' => 'ClubController@index']);
+    Route::get('event/{event}.geojson', ['as' => 'api.v1.event.show', 'uses' => 'EventController@show']);
 });
 
 // Authentication routes...

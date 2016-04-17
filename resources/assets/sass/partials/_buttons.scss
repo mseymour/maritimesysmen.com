@@ -1,7 +1,8 @@
-.cta {
-  @extend %button;
-  border-color: palette-shade(secondary, 25%);
-  background-color: palette(secondary);
-  &:hover, &:focus { background-color: palette-tint(secondary); }
-  &:active { background-color: palette-shade(secondary); }
+.cta, a.cta {
+    @extend %button;
+    border-color: palette-shade(secondary, 25%);
+    background-color: palette(secondary);
+    &:hover, &:focus { background-color: palette-tint(secondary); }
+    &:active { background-color: palette-shade(secondary); }
+    box-shadow: none;
 }

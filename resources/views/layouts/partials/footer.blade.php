@@ -7,7 +7,7 @@
     <section>
       <h1>Clubs <span class="catchword">&amp;</span> Regional Team</h1>
       <ul>
-        <li><a href="/reports/presidents">Submit a report</a></li>
+        <li><a href="{{ route('reports.index') }}">Submit a report</a></li>
         <li><a href="http://www.maritimesysmen.com/officer_manual/">Officer&rsquo;s Handbook</a></li>
         @if (Auth::check())
           <li><a href="/auth/logout">Log Out</a></li>

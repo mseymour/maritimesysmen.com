@@ -4,22 +4,35 @@
 
 @section('head')
 <!-- Mapbox.js - Map -->
-<script src="https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js"></script>
-<link href="https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css" rel="stylesheet" />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet'>
 @endsection
 
 @section('hero')
-<section id="clubs-map" style="width:100%;height:500px">
+<section id="clubs-map" class="hero-map clubs-map">
   
 </section>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoibWFya3NleW1vdXIiLCJhIjoiM3NyQlRJayJ9.v4kbFAbqZnHrdFYJtKlPgA';
-var map = L.mapbox.map('clubs-map', 'markseymour.ndif9c29');
-map.scrollWheelZoom.disable();
-var featureLayer = L.mapbox.featureLayer('markseymour.ndif9c29')
-    .loadURL('/api/clubs')
-.addTo(map).on('ready', function(e) {
-    map.fitBounds(featureLayer.getBounds());
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3NleW1vdXIiLCJhIjoiM3NyQlRJayJ9.v4kbFAbqZnHrdFYJtKlPgA';
+var map = new mapboxgl.Map({
+    container: 'clubs-map', // container id
+    style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+    scrollWheelZoom: false
+});
+var source = new mapboxgl.GeoJSONSource({
+    data: '/api/v1/clubs.geojson'
+});
+map.on('style.load', function () {
+    map.addSource('markers', source);
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-24.svg",
+            "icon-allow-overlap": true
+        }
+    });
 });
 </script>
 @endsection
@@ -30,7 +43,7 @@ var featureLayer = L.mapbox.featureLayer('markseymour.ndif9c29')
 <ul class="cards">
   @foreach ($district->clubs as $club)
   <li class="card">
-    @include('partials.clubs.club', ['club' => $club])
+    @include('clubs.partials.club', ['club' => $club])
   </li>
   @endforeach
 </ul>

@@ -7,7 +7,7 @@ class EventLinkTableSeeder extends CsvSeeder {
     public function __construct()
     {
         $this->table = 'event_links';
-        $this->filename = base_path().'/database/seeds/csvs/event_links.csv';
+        $this->filename = database_path() . '/seeds/csvs/event_links.csv';
     }
 
     public function run()

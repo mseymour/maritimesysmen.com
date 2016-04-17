@@ -14,7 +14,7 @@
     @endif
     @if($club->meeting_date || $club->meeting_time)
     <dl class="card-info">
-      <dt class="card-label">Meeting time</dt>
+      <dt class="card-label">Meets</dt>
       <dd>{{ $club->meeting_date }} @ {{ $club->meeting_time }}</dd>
     </dl>
     @endif
@@ -33,7 +33,7 @@
     <dl class="card-info">
       <dt class="card-label">President</dt>
       <dd>
-        @include('partials.clubs.president', ['president' => $club->president])
+        @include('clubs.partials.president', ['president' => $club->president])
       </dd>
     </dl>
   </div>

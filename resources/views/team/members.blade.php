@@ -8,7 +8,7 @@
 <ul class="cards">
 @foreach ($team as $member)
   <li class="card">
-    @include('partials.team.member', ['member' => $member])
+    @include('team.partials.member', ['member' => $member])
   </li>
 @endforeach
 </ul>

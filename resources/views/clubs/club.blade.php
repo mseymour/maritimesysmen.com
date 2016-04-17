@@ -4,6 +4,6 @@
 
 @section('content')
 <section class="card">
-  @include('partials.clubs.club', ['club' => $club])
+  @include('clubs.partials.club', ['club' => $club])
 </section>
 @endsection

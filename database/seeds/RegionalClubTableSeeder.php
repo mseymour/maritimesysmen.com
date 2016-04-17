@@ -7,7 +7,7 @@ class RegionalClubTableSeeder extends CsvSeeder {
     public function __construct()
     {
         $this->table = 'regional_clubs';
-        $this->filename = base_path().'/database/seeds/csvs/regional_clubs.csv';
+        $this->filename = database_path() . '/seeds/csvs/regional_clubs.csv';
     }
 
     public function run()

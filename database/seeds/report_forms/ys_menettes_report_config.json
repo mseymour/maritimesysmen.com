@@ -1,16 +1,17 @@
 {
   "label":"Y's Menettes Report",
+  "short_label":"Y's Menettes",
   "form": [
     {"type":"fieldset", "label":"Identification", "content": [
-      {"type":"input", "label":"Full Name", "placeholder":"Jane Doe", "required":true},
-      {"type":"input", "label":"Email Address", "placeholder":"jane.doe@example.org"},
-      {"type":"input", "label":"Club name", "placeholder":"Placeholderton Y Service Club", "required":true},
+      {"type":"text", "label":"Full Name", "placeholder":"Jane Doe", "required":true},
+      {"type":"text", "label":"Email Address", "placeholder":"jane.doe@example.org"},
+      {"type":"text", "label":"Club name", "placeholder":"Placeholderton Y Service Club", "required":true},
       {"type":"month+year", "label":"Month of", "required":true}
     ]},
     {"type":"fieldset", "label":"Membership Details", "content": [
-      {"type":"input", "label":"Number enrolled at first of month", "required":true},
-      {"type":"input", "label":"Number enrolled at end of month", "required":true},
-      {"type":"input", "label":"Frequency of meetings", "required":true},
+      {"type":"text", "label":"Number enrolled at first of month", "required":true},
+      {"type":"text", "label":"Number enrolled at end of month", "required":true},
+      {"type":"text", "label":"Frequency of meetings", "required":true},
       {"type":"textarea", "label":"Indicated details for any change in above (name and/or address)", "required":true},
       {"type":"textarea", "label":"What (if any) service to your community this month?"},
       {"type":"textarea", "label":"Donations, if any, and to whom?"},

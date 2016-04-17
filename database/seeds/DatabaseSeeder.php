@@ -17,14 +17,15 @@ class DatabaseSeeder extends Seeder
         // disable foreign key check for this connection before running seeders
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
-        $this->call(UserTableSeeder::class);
-        $this->call(EventLinkTableSeeder::class);
-        $this->call(EventTableSeeder::class);
-        $this->call(ProvinceTableSeeder::class);
-        $this->call(RegionalClubTableSeeder::class);
-        $this->call(RegionalDistrictTableSeeder::class);
-        $this->call(RegionalPresidentTableSeeder::class);
-        $this->call(RegionalTeamMemberTableSeeder::class);
+        // $this->call(UserTableSeeder::class);
+        // $this->call(EventLinkTableSeeder::class);
+        // $this->call(EventTableSeeder::class);
+        // $this->call(ProvinceTableSeeder::class);
+        // $this->call(RegionalClubTableSeeder::class);
+        // $this->call(RegionalDistrictTableSeeder::class);
+        // $this->call(RegionalPresidentTableSeeder::class);
+        // $this->call(RegionalTeamMemberTableSeeder::class);
+        $this->call(ReportFormTableSeeder::class);
 
         // supposed to only apply to a single connection and reset it's self
         // but I like to explicitly undo what I've done for clarity
@@ -33,11 +34,12 @@ class DatabaseSeeder extends Seeder
         Model::reguard();
 
         $sluggableModels = [
-            \App\Event::all(),
-            \App\RegionalClub::all(),
-            \App\RegionalDistrict::all(),
-            \App\RegionalPresident::all(),
-            \App\RegionalTeamMember::all(),
+            // \App\Event::all(),
+            // \App\RegionalClub::all(),
+            // \App\RegionalDistrict::all(),
+            // \App\RegionalPresident::all(),
+            // \App\RegionalTeamMember::all(),
+            // \App\ReportForm::all(),
         ];
 
         // foreach($sluggableModels[1] as $c):

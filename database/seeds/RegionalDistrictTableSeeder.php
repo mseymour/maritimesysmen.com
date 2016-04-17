@@ -7,7 +7,7 @@ class RegionalDistrictTableSeeder extends CsvSeeder {
     public function __construct()
     {
         $this->table = 'regional_districts';
-        $this->filename = base_path().'/database/seeds/csvs/regional_districts.csv';
+        $this->filename = database_path() . '/seeds/csvs/regional_districts.csv';
     }
 
     public function run()

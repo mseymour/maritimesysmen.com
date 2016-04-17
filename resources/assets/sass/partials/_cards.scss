@@ -1,70 +1,66 @@
 .cards { 
-  padding-left: 0;
-  list-style: none;
-  @include container;
-  .card {
-    @include gallery(6);
-    @include susy-breakpoint(560px) {
-      @include gallery(6);
+    padding-left: 0;
+    list-style: none;
+    @include container;
+    .card {
+//        @include gallery(6);
+        @include susy-breakpoint(560px) {
+            @include gallery(6);
+        }
+        margin-bottom: .75em();
     }
-//    @include susy-breakpoint(820px) {
-//      @include gallery(4);
-//    }
-    margin-bottom: .75em();
-  }
 }
 
 .card {
-  .main-content &::before, .main-content & li::before { content: none; }
-  &-header { 
-    //border-bottom: 1px solid;
-    font-family: 'raleway-web', sans-serif;
-    h1 {
-      font-size: 16pt;
-      text-transform: uppercase;
-      small { text-transform: none; font-size: 13pt; }
+    .main-content &::before, .main-content & li::before { content: none; }
+    &-header { 
+        //border-bottom: 1px solid;
+        font-family: 'raleway-web', sans-serif;
+        h1 {
+            font-size: 16pt;
+            text-transform: uppercase;
+            small { text-transform: none; font-size: 13pt; }
+        }
+        margin-bottom: .75em;
+        &::after {
+            content: '';
+            display: block;
+            width: 4.44em;
+            height: 2px;
+            margin-top: .75em;
+            background-color: palette-tint(primary);
+        }
     }
-    margin-bottom: .75em();
-    &::after {
-      content: '';
-      display: block;
-      width: 4.44em;
-      height: 2px;
-      margin-top: .75em();
-      background-color: palette-tint(body);
+    &-info {
+        @include container;
+        > dt { @include span(3 first); text-align: right; }
+        > dd { margin-left: 0; @include span(9 last) }
+        &, & > *:nth-child(n+3) { margin-top: .75em; margin-bottom: .75em; }
+        a { @include link; }
+        &-link {
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h2, h3 {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            margin: 0;
+        }
     }
-  }
-  &-info {
-    @include container;
-    > dt { @include span(3 first); text-align: right; }
-    > dd { margin-left: 0; @include span(9 last) }
-    &, & > *:nth-child(n+3) { margin-top: .75em(); margin-bottom: .75em(); }
-    a { @extend %link; }
-    &-link {
-      display: block;
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    &-label {
+        font-weight: normal;
+        font-style: normal;
+        text-transform: lowercase;
+        color: palette-shade(primary, 5%);
+        &::after {
+            content: '•';
+            font-family: 'raleway-web', sans-serif;
+            font-style: normal;
+            margin-left: .25em;
+        }
     }
-    h2, h3 {
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      margin: 0;
-    }
-  }
-  &-label {
-    //font-size: 12pt;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: lowercase;
-    color: palette-shade(tertiary, 5%);
-    &::after {
-      content: '•';
-      font-family: 'raleway-web', sans-serif;
-      font-style: normal;
-      margin-left: .25em;
-    }
-  }
 }

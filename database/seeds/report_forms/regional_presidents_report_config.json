@@ -1,49 +1,50 @@
 {
   "label":"Regional Presidents Report",
+  "short_label":"Regional President",
   "form": [
     {"type":"fieldset", "label":"Identification", "content": [
-      {"type":"input", "label":"Full Name", "placeholder":"John Doe", "required":true},
-      {"type":"input", "label":"Email Address", "placeholder":"john.doe@example.org"},
-      {"type":"input", "label":"Club name", "placeholder":"Placeholderton Y Service Club", "required":true},
+      {"type":"text", "label":"Full Name", "placeholder":"John Doe", "required":true},
+      {"type":"email", "label":"Email Address", "placeholder":"john.doe@example.org"},
+      {"type":"text", "label":"Club name", "placeholder":"Placeholderton Y Service Club", "required":true},
       {"type":"month+year", "label":"Month of", "required":true}
     ]},
     {"type":"fieldset", "label":"Membership Details", "content": [
-      {"type":"input", "label":"Number enrolled at first of month", "required":true},
-      {"type":"input", "label":"Number enrolled at end of month", "required":true},
+      {"type":"text", "label":"Number enrolled at first of month", "required":true},
+      {"type":"text", "label":"Number enrolled at end of month", "required":true},
       {"type":"textarea", "label":"Indicated details for any change in above (name and / or address)", "required":true}
     ]},
     {"type":"fieldset", "label":"Board of Director's Meetings Held", "content": [
-      {"type":"input", "label":"Dates held", "required":true},
-      {"type":"input", "label":"Number present", "required":true},
+      {"type":"text", "label":"Dates held", "required":true},
+      {"type":"text", "label":"Number present", "required":true},
       {"type":"textarea", "label":"Details of meeting", "required":true},
       {"type":"textarea", "label":"Changes in club officers", "required":true}
     ]},
     {"type":"fieldset", "label":"Club Meetings", "content": [
-      {"type":"input", "label":"Number of meetings held", "required":true},
-      {"type":"input", "label":"Average attendance (%)"},
+      {"type":"text", "label":"Number of meetings held", "required":true},
+      {"type":"text", "label":"Average attendance (%)"},
       {"type":"textarea", "label":"Highlights of each meeting", "required":true}
     ]},
     {"type":"fieldset", "label":"Fundraising Projects", "content": [
       {"type":"textarea", "label":"Type of Projects / anticipated profit and date", "required":true}
     ]},
     {"type":"fieldset", "label":"Service Projects", "content": [
-      {"type":"input", "label":"Youth / Community Service chairman", "required":true},
+      {"type":"text", "label":"Youth / Community Service chairman", "required":true},
       {"type":"textarea", "label":"Youth / Community Service", "required":true},
-      {"type":"input", "label":"Alexander Scholarship Fund chairman", "required":true},
+      {"type":"text", "label":"Alexander Scholarship Fund chairman", "required":true},
       {"type":"textarea", "label":"Alexander Scholarship Fund", "required":true},
-      {"type":"input", "label":"Human Crisis / Time of Fast chairman", "required":true},
+      {"type":"text", "label":"Human Crisis / Time of Fast chairman", "required":true},
       {"type":"textarea", "label":"Human Crisis / Time of Fast", "required":true},
-      {"type":"input", "label":"YMCA Service chairman", "required":true},
+      {"type":"text", "label":"YMCA Service chairman", "required":true},
       {"type":"textarea", "label":"YMCA Service", "required":true},
-      {"type":"input", "label":"Brotherhood chairman", "required":true},
+      {"type":"text", "label":"Brotherhood chairman", "required":true},
       {"type":"textarea", "label":"Brotherhood", "required":true},
-      {"type":"input", "label":"Extension / Membership / Conservation chairman", "required":true},
+      {"type":"text", "label":"Extension / Membership / Conservation chairman", "required":true},
       {"type":"textarea", "label":"Extension / Membership / Conservation", "required":true},
-      {"type":"input", "label":"World Outlook / Brother Clubs chairman", "required":true},
+      {"type":"text", "label":"World Outlook / Brother Clubs chairman", "required":true},
       {"type":"textarea", "label":"World Outlook / Brother Clubs", "required":true},
-      {"type":"input", "label":"Endowment Fund chairman", "required":true},
+      {"type":"text", "label":"Endowment Fund chairman", "required":true},
       {"type":"textarea", "label":"Endowment Fund", "required":true},
-      {"type":"input", "label":"YEEP / STEP chairman", "required":true},
+      {"type":"text", "label":"YEEP / STEP chairman", "required":true},
       {"type":"textarea", "label":"YEEP / STEP", "required":true}
     ]}
   ]

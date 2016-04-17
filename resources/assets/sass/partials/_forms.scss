@@ -1,0 +1,7 @@
+form fieldset { border: 0; padding: 0; }
+form legend { display: block; font-size: 16pt; font-family: 'raleway-web', sans-serif; font-weight: 600; line-height: 1.2; }
+form fieldset > div { @include container; margin-bottom: .77em; }
+form fieldset > div > label { @include span(4 first); text-align: right; }
+form fieldset > div > div { @include span(8 last); > * { width: 100%; }    }
+input[type="text"], input[type="email"], input[type="tel"], textarea.form-control { border: 1px solid palette(body); }
+//button[type="submit"] { @include push(4); }

@@ -1,9 +1,9 @@
 // Common look for standard links
-%link {
-  box-shadow: inset 0 -5px 0 palette-tint(secondary, 5%);
-  color: inherit;
-  transition: background .15s cubic-bezier(.33,.66,.66,1);
-  &:hover, &:focus, &:active {
-    background:palette-tint(secondary, 5%)
-  }
+@mixin link($palette: secondary, $tint: 75%) {
+    box-shadow: inset 0 -5px 0 palette-tint($palette, $tint);
+    color: inherit;
+    transition: background .15s cubic-bezier(.33,.66,.66,1);
+    &:hover, &:focus, &:active {
+        background:palette-tint($palette, $tint)
+    }
 }

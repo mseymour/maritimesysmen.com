@@ -1,27 +1,31 @@
 .masthead {
-  position: relative;
-  $bg-color: palette(primary);
-  background-color: $bg-color;
-  color: contrasting-color($bg-color, #FFF, #000);
-  a { color: inherit; }
-  .wrap { @include container; }
-  .ys-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    /*@include span(1);*/
-    height: 66px;
-    transition: all 0.3s ease;
-    img { height: 66px; }
-  }
-  //.site-nav { @include span(11 nest last); }
-//  &:before {
-//    content: '';
-//    position: absolute;
-//    top: 50%;
-//    left: 0;
-//    right: 0;
-//    border-bottom: 1px solid white;
-//    transform: translateY(-50%);
-//  }
+    position: relative;
+    $bg-color: palette(primary);
+    background-color: $bg-color;
+    color: contrasting-color($bg-color, #FFF, #000);
+    a { color: inherit; }
+    .wrap { @include container; }
+    .ys-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        /*@include span(1);*/
+        height: 66px;
+        transition: all 0.3s ease;
+        img { height: 66px; }
+        display: none;
+        @include susy-breakpoint(800px) {
+            display: block;
+        }
+    }
+    //.site-nav { @include span(11 nest last); }
+//    &:before {
+//        content: '';
+//        position: absolute;
+//        top: 50%;
+//        left: 0;
+//        right: 0;
+//        border-bottom: 1px solid white;
+//        transform: translateY(-50%);
+//    }
 }

@@ -1,10 +1,11 @@
 {
   "label":"District Governor's Report",
+  "short_label":"District Governor",
   "form": [
     {"type":"fieldset", "label":"Identification", "content": [
-      {"type":"input", "label":"Full Name", "placeholder":"John Doe", "required":true},
-      {"type":"input", "label":"Email Address", "placeholder":"john.doe@example.org"},
-      {"type":"input", "label":"District", "required":true},
+      {"type":"text", "label":"Full Name", "placeholder":"John Doe", "required":true},
+      {"type":"email", "label":"Email Address", "placeholder":"john.doe@example.org"},
+      {"type":"text", "label":"District", "required":true},
       {"type":"month+year", "label":"Month of", "required":true}
     ]},
     {"type":"fieldset", "label":"Club Meetings Attended", "content": [

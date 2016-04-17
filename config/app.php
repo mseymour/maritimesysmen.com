@@ -144,13 +144,17 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        // Additional providers
+        /*
+         * Vendor Service Providers...
+         */
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
         Caffeinated\Menus\MenusServiceProvider::class,
         Toin0u\Geocoder\GeocoderServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         //Barryvdh\Debugbar\ServiceProvider::class,
+        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+        Toin0u\Geocoder\GeocoderServiceProvider::class,
 
     ],
 
@@ -200,12 +204,16 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        // Additional aliases
+        /*
+         * Vendor Aliases...
+         */
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Menu' => Caffeinated\Menus\Facades\Menu::class,
         'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+        'Geocoder' => Toin0u\Geocoder\Facade\Geocoder::class,
     ],
 
 ];

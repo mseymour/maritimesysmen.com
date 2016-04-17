@@ -15,12 +15,12 @@
   @yield('head')
 </head>
 <body>
-  @include('partials.layouts.header')
+  @include('layouts.partials.header')
   @yield('hero')
   <main id="content" class="main-content">
     @yield('content')
   </main>
-  @include('partials.layouts.footer')
+  @include('layouts.partials.footer')
   @yield('bottom')
 </body>
 </html>

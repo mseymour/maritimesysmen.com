@@ -13,8 +13,7 @@ return [
     // Providers get called in the chain order given here.
     // The first one to return a result will be used.
     'providers' => [
-        'Geocoder\Provider\GoogleMapsProvider' => ['fr-FR', 'Île-de-France', true],
-        'Geocoder\Provider\FreeGeoIpProvider'  => null,
+        'Geocoder\Provider\GoogleMapsProvider' => ['en-CA', 'Canada', true, env('GOOGLE_SERVER_API_KEY')],
     ],
     'adapter'  => 'Geocoder\HttpAdapter\CurlHttpAdapter',
 ];
